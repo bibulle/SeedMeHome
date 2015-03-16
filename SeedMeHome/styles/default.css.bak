@@ -1,0 +1,480 @@
+a:link {color: #FFFFFF; text-decoration: none;}
+a:visited {color: #FFFFFF; text-decoration: none;}
+a:hover {color: #20ff20; text-decoration: none;}
+
+body {
+	background: #000000;
+	margin: 0px;
+	padding: 0px; 
+	font-family: Verdana;
+	font-size: 12px;
+	color: #FFFFFF;
+}
+
+.container {
+	position: relative;
+	width: 975px;
+	word-wrap: break-word;
+}
+
+ul {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+.field {
+        border: 1px solid #474747;
+        padding: 2px;
+        margin: 5px;
+}
+
+legend {
+	font-size: 10px;
+	align: center;
+}
+
+.top, .contents, .menu , .log {
+    background-color: #242424;
+    border: 1px solid #474747;
+    float:left;
+	position:relative;
+	margin:2px;
+	margin-right:0px;
+	margin-bottom:0px;
+}
+
+.top {
+	left: 0px;
+        height: 73px;
+	width: 975px; 
+}
+
+.contents {
+    width: 668px;
+  	float:right;
+	margin-right:-4px;
+}
+
+.menu {
+	left: 0px;
+    width: 300px;
+	z-index: 1000;
+}
+
+.log {
+	left: 0px;
+    width: 975px;
+}
+
+.top_right {
+	float: right;
+	padding-right: 5px;
+	padding-left: 50px;
+	font-size: 9px;
+	text-align: left;
+	color: #AAAAAA;
+	#border-left: 1px solid #474747;
+}
+
+.top_left {
+    float: left;
+	padding-left: 50px;
+	font-size: 56px;
+	color: #AAAAAA;
+}
+
+#column1_top {
+	float: left; 
+	width: 100%; 
+	line-height: 0px;
+}
+
+.links {
+	width:100%;
+	text-align: right;
+	margin: 0px 4px 4px 4px;
+	float: left;
+}
+	
+a.link {
+	background-color: #242424;
+	border: 1px solid #474747;
+	color: #AAA;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+.small {
+	font-size: 12px;
+}
+
+form {
+	padding:0;
+	margin:0;
+}
+
+.popup {
+	position: absolute;
+	top: 150px;
+    left: 50px;	
+	z-index: 100;
+	background-color: #777777;
+	width:300px;
+	border: 3px #ffffff solid;
+}
+
+.popup .input[type="text"] {
+	width:215px;
+}
+
+.submit {
+  	font-size: 12px;
+}
+
+.input {
+   	font-family: "Verdana";
+   	font-size: 12px;
+}
+
+.input[type="file"] {
+    	color: #AAAAAA;
+}
+
+.button1 {
+   	position: absolute;
+	top: 5px;
+	left: 549px;
+   	width:70px;
+   	height:14px;
+   	float: left;
+	font-size: 10px;
+	text-align: center;
+	cursor: pointer; cursor: hand;
+	margin: 0px;
+}
+
+.button2 {
+   	position: absolute;
+	top: 23px;
+	left: 549px;
+   	width:70px;
+   	height:14px;
+   	float: left;
+   	font-size: 10px;
+   	text-align: center;
+	cursor: pointer; cursor: hand;
+	margin: 0px;
+}
+
+.red {
+	background-color: #441111;
+}
+
+.green {
+	background-color: #114411;
+}
+
+.queue_item {
+	position: relative;
+	background-color:#333333;
+	border: 1px #000 solid;
+	margin: 7px;
+	padding: 6px;
+	text-align: left;
+}
+
+.bar {
+	background-color: #006600;
+	height: 8px;
+}
+.bar2 {
+	background-color: #00CC00;
+	height: 8px;
+}
+.bar-border {
+	background-color: #224422;
+	border: 1px #000 solid;
+	width: 100px;
+	float: left;
+	bottom: 0px;
+	margin-right: 4px;
+	margin-top: 2px;
+	height: 8px;
+}
+.progress {
+	font-size: 10px;
+	background-color:#333333;
+	padding: 0px;
+	margin-top: 4px;
+}
+
+div.slider {
+	width:215px;
+	margin:10px 0;
+	background-color:#777777;
+	height:5px;
+	position: relative;
+}
+
+div.handle { 
+	width:5px;
+	height:15px; 
+	background-color:#00dd00; 
+	cursor:move; 
+	position: absolute; 
+}
+
+div#log, div#log_em, div#done, div#movies, div#tvshows, div#temp {
+	text-align:left;
+	font-size:0.8em;
+}
+
+.dir1, .dir2, .dir3, .dir4, .dir5, .dir6, .dir7 {
+	font-weight:bold;
+	background-color:#404040;
+	position:relative;
+	padding-left:5px;
+	padding-right:10px;
+	margin-right:10px;
+	cursor: pointer; cursor: hand;
+}
+.dir1.odd, .dir2.odd, .dir3.odd, .dir4.odd, .dir5.odd, .dir6.odd, .dir7.odd {
+	background-color:#494949;
+}
+
+.file1, .file2, .file3, .file4, .file5, .file6, .file7 {
+	background-color:#303030;
+	position:relative;
+	padding-left:5px;
+	padding-right:10px;
+	margin-right:10px;
+	cursor: pointer; cursor: hand;
+}
+.file1.odd, .file2.odd, .file3.odd, .file4.odd, .file5.odd, .file6.odd, .file7.odd {
+	background-color:#393939;
+}
+.temp {
+	font-style:italic;
+}
+.file2, .dir2 {
+	margin-left:10px;
+}
+.file3, .dir3 {
+	margin-left:20px;
+}
+.file4, .dir4 {
+	margin-left:30px;
+}
+.file5, .dir5 {
+	margin-left:40px;
+}
+.file6, .dir6 {
+	margin-left:50px;
+}
+.file7, .dir7 {
+	margin-left:60px;
+}
+.button_r {
+   	width:70px;
+   	float: right;
+	font-size: 10px;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer; cursor: hand;
+	margin: 0px;
+}
+.allpoll, .mypoll {
+   	float: right;
+	font-size: 10px;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer; cursor: hand;
+	margin: 0px;
+	width: 20px;
+	margin-right: 2px;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+.allpoll {
+    background-image: url('../img/star_on3.gif');
+}
+.allpoll0 {
+	  background-image: none;
+}
+.allpoll1 {
+	  background-image: url('../img/star_on1.gif');
+}
+.allpoll2 {
+	  background-image: url('../img/star_on2.gif');
+}
+.mypoll0 {
+	  background-image: url('../img/check0.gif');
+}
+.mypoll1 {
+	  background-image: url('../img/check1.gif');
+}
+
+.detail_img_div {
+  float:left;
+  width:94px;
+  height:139px;
+}
+.detail_img_div #detail_img {
+  width:94px;
+  height:139px;
+}
+.detail_img_div #detail_img_wait {
+  padding-top:30px;
+}
+
+.detail_right{
+  float:right;
+  width:190px;
+}
+.movie_title{
+  font-weight: bold;
+  padding-top:10px;
+  padding-bottom:10px;
+  width:100%;
+  float:right;
+}
+.movie_year {
+  font-size: 0.8em;
+  float:left;
+}
+
+.movie_plot {
+  width:100%;
+  font-size: 0.8em;
+  float: right;
+  text-align:justify;
+}
+
+.movie_genres {
+  float: right;
+  width:100%;
+  align:center;
+  text-align:center;
+}
+.movie_genre {
+  height:42px;
+  width:42px;
+  background-image:url('../img/Autre.png');
+  border: 0px;
+}
+.movie_genreComedie {
+  background-image:url('../img/Comedie.png');
+}
+.movie_genreFiml-Noir {
+  background-image:url('../img/FilmNoir.png');
+}
+.movie_genreWestern {
+  background-image:url('../img/Western.png');
+}
+.movie_genreHorreur {
+  background-image:url('../img/Horreur.png');
+}
+.movie_genreFamille {
+  background-image:url('../img/Famille.png');
+}
+.movie_genreFantasy {
+  background-image:url('../img/Fantasy.png');
+}
+.movie_genreRomance {
+  background-image:url('../img/Romance.png');
+}
+.movie_genreMystere {
+  background-image:url('../img/Mystere.png');
+}
+.movie_genreThriller {
+  background-image:url('../img/Thriller.png');
+}
+.movie_genreGuerre {
+  background-image:url('../img/Guerre.png');
+}
+.movie_genreDrame {
+  background-image:url('../img/Drame.png');
+}
+.movie_genreMusical {
+  background-image:url('../img/Musical.png');
+}
+.movie_genreAventure {
+  background-image:url('../img/Aventure.png');
+}
+.movie_genreAnimation {
+  background-image:url('../img/Dessins+animes.png');
+}
+.movie_genreAction {
+  background-image:url('../img/Action.png');
+}
+.movie_genreScience-Fiction {
+  background-image:url('../img/Sci-Fi.png');
+}
+.movie_genreDrame {
+  background-image:url('../img/Drame.png');
+}
+.movie_genreCrime {
+  background-image:url('../img/Crime.png');
+}
+
+.movie_certif {
+  background-image:url('../img/unrated.gif');
+  background-repeat:no-repeat;
+  height:25px;
+  width:25px;
+  float:right;
+}
+.movie_certifG {
+  background-image:url('../img/notrated.gif');
+}
+.movie_certifPassed {
+  background-image:url('../img/notrated.gif');
+}
+.movie_certifAll {
+  background-image:url('../img/unrated.gif');
+}
+.movie_certifS {
+  background-image:url('../img/unrated.gif');
+}
+.movie_certif6 {
+  background-image:url('../img/unrated.gif');
+}
+.movie_certif7 {
+  background-image:url('../img/unrated.gif');
+}
+.movie_certifU {
+  background-image:url('../img/unrated.gif');
+}
+.movie_certifPG {
+  background-image:url('../img/picto_cat2.gif');
+}
+.movie_certif10 {
+  background-image:url('../img/picto_cat2.gif');
+}
+.movie_certif12A {
+  background-image:url('../img/picto_cat3.gif');
+}
+.movie_certifM_12 {
+  background-image:url('../img/picto_cat3.gif');
+}
+.movie_certif-12 {
+  background-image:url('../img/picto_cat3.gif');
+}
+.movie_certifPG-13 {
+  background-image:url('../img/picto_cat3.gif');
+}
+.movie_certifR {
+  background-image:url('../img/picto_cat4.gif');
+}
+.movie_certif14 {
+  background-image:url('../img/picto_cat4.gif');
+}
+.movie_certif15A {
+  background-image:url('../img/picto_cat4.gif');
+}
+.movie_certifNC-16 {
+  background-image:url('../img/picto_cat5.gif');
+}
+

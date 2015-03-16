@@ -1,0 +1,34 @@
+ErrorDocument 403 /SeedMeHome/403.php
+<Files .*>
+  Deny from all
+</Files>
+<Files *.php>
+  Deny from all
+</Files>
+<Files index.php>
+  Allow from All
+</Files>
+<Files get.php>
+  Allow from All
+</Files>
+<Files set.php>
+  Allow from All
+</Files>
+<Files upload.php>
+  Allow from All
+</Files>
+<Files ftpget.php>
+  Allow from All
+</Files>
+<Files 403.php>
+  Allow from All
+</Files>
+<Files list.php>
+  Allow from All
+</Files>
+<Files getImdb.php>
+  Allow from All
+</Files>
+<Files getImage.php>
+  Allow from All
+</Files>
