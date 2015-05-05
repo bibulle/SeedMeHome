@@ -80,8 +80,14 @@ Event.observe(window, 'load', function() {
 	refreshDoneFiles();
 	refreshLog();
 
+<?php
+	if ($user_role == "admin") {
+?>
 	//watch for form submits
 	$('uploadtorrent').observe('submit', onuploadtorrentFormSubmit);
+<?php
+	}
+?>
 });
 </script>
 

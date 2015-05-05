@@ -60,7 +60,7 @@ legend {
 .menu {
 	left: 0px;
     width: 300px;
-	z-index: 1000;
+	z-index: 900;
 }
 
 .log {
@@ -120,7 +120,7 @@ form {
 	position: absolute;
 	top: 150px;
     left: 50px;	
-	z-index: 100;
+	z-index: 1000;
 	background-color: #777777;
 	width:300px;
 	border: 3px #ffffff solid;
@@ -173,13 +173,16 @@ form {
 	background-color: #441111;
 }
 
-.green {
+.green, .green_pause {
 	background-color: #114411;
+}
+
+.green_restart {
+	background-color: #AA1111;
 }
 
 .queue_item {
 	position: relative;
-	background-color:#333333;
 	border: 1px #000 solid;
 	margin: 7px;
 	padding: 6px;
@@ -189,26 +192,36 @@ form {
 .bar {
 	background-color: #006600;
 	height: 8px;
+	font-size: 1px;
 }
 .bar2 {
 	background-color: #00CC00;
 	height: 8px;
+	font-size: 1px;
 }
 .bar-border {
+    border: 1px solid #000000;
 	background-color: #224422;
-	border: 1px #000 solid;
 	width: 100px;
 	float: left;
 	bottom: 0px;
 	margin-right: 4px;
 	margin-top: 2px;
 	height: 8px;
+	font-size: 1px;
 }
 .progress {
 	font-size: 10px;
-	background-color:#333333;
 	padding: 0px;
 	margin-top: 4px;
+}
+
+.progress .rateDownload, .progress .rateUpload {
+	font-weight: bold
+}
+
+.progress div .rateDownload_undefined, .progress div .rateUpload_undefined, .progress div .rateDownload_0, .progress div .rateUpload_0 {
+	font-weight: normal
 }
 
 div.slider {
@@ -219,7 +232,7 @@ div.slider {
 	position: relative;
 }
 
-div.handle { 
+div.handle {                                                                                           
 	width:5px;
 	height:15px; 
 	background-color:#00dd00; 
@@ -241,7 +254,7 @@ div#log, div#log_em, div#done, div#movies, div#tvshows, div#temp {
 .dir, .dir .mypoll, .dir .allpoll {
 	background-color:#404040;
 }
-.dir.odd, .dir1.odd .mypoll, .dir1.odd .allpoll {
+.dir.odd, .dir.odd .mypoll, .dir.odd .allpoll {
 	background-color:#494949;
 }
 
@@ -286,6 +299,11 @@ div#log, div#log_em, div#done, div#movies, div#tvshows, div#temp {
 	vertical-align: middle;
 	cursor: pointer; cursor: hand;
 	margin: 0px;
+}
+.file_date {
+  float: right;
+  font-size: 0.7em;
+  cursor: pointer; cursor: hand;
 }
 .allpoll, .mypoll {
    	float: right;

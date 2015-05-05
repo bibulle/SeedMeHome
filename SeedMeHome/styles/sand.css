@@ -95,7 +95,7 @@ form {
 	position: absolute;
 	top: 150px;
     left: 50px;	
-	z-index: 100;
+	z-index: 1000;
 	background-color: #777777;
 	width:300px;
 	border: 3px #ffffff solid;
@@ -148,8 +148,12 @@ form {
 	background-color: #441111;
 }
 
-.green {
+.green_pause {
 	background-color: #114411;
+}
+
+.green_restart {
+	background-color: #AA1111;
 }
 
 .queue_item {
@@ -186,6 +190,14 @@ form {
 	background-color: #A0522D;
 	padding: 0px;
 	margin-top: 4px;
+}
+
+.progress .rateDownload, .progress .rateUpload {
+	font-weight: bold
+}
+
+.progress div .rateDownload_undefined, .progress div .rateUpload_undefined {
+	font-weight: normal
 }
 
 div.slider { 

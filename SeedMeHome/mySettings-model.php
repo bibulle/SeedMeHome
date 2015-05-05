@@ -15,13 +15,16 @@ $users[] = array("login"=>"u1", "password"=>"pass", "role"=>"read");
 // SEEDBOX
 //------------------------------------------------------------------------------
 //Change below settings to match you seedbox configuration
+#$seedbox_type = 'rutorrent';
+$seedbox_type = 'transmission';
 $seedbox_host = 'foobar.seebox.rt';
 $seedbox_port = 1234;
 $seedbox_user = 'yourname';
 $seedbox_passwd = 'mfzpzeoqep';
+$seedbox_home_dir = '/home/yourname';
 
 //------------------------------------------------------------------------------
-// FTP
+// FTP SeedBox
 //------------------------------------------------------------------------------
 // your ftp configuration
 $ftp_server = "foobar.seebox.rt";
@@ -33,6 +36,9 @@ $ftp_path = "";
 // TARGETS
 //------------------------------------------------------------------------------
 // Target directory
+#$target_ftp_server = "mafreebox.free.fr";
+#$target_ftp_user = "freebox";
+#$target_ftp_password = "blabla";
 $target_path_movies = "D:\\files\\movies";
 $target_path_tvshows = "D:\\files\\tvshows";
 

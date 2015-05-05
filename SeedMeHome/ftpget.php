@@ -16,29 +16,18 @@ if (!flock($fp, LOCK_EX | LOCK_NB)) {
 	log_debug("Couldn't get the lock !");
 	die();
 }
-
 log_debug("Start");
 
-// On se connecte au ftp
-$conn_id = ftp_connect($ftp_server);
+$conn_id = connectFTP($ftp_server, $ftp_user, $ftp_password);
 if (!$conn_id) {
-	log_error("Connection impossible (".$ftp_server.")");
-	die();
+  exit();
 }
-
-$login_result = @ftp_login($conn_id, $ftp_user, $ftp_password);
-if (!$login_result) {
-	log_error("Connection impossible (".$ftp_server.", ".$ftp_user.")");
-	exit;
-}
-
-// On recupere le type de serveur (ca pourrait servir...)
-$real_systyp = ftp_systype($conn_id);
-$systyp = $real_systyp;
+$systyp = systypeFtp($conn_id);
 
 // On recupere la liste des fichiers present sur le FTP
 log_debug("Scanning (".$ftp_server.", ".$ftp_user.")");
-$files = scanftpdir($ftp_path);
+$files = scanftpdir($ftp_path, $conn_id, $systyp);
+#var_dump($files);
 
 // List a attended done file
 $ftp_done_files = array();
@@ -70,8 +59,16 @@ $done_files = scandonedir($ftp_done_path);
 for($i=0;$i<count($done_files);$i++) {
 	$file = $done_files[$i];
 	if (!in_array($file, $ftp_done_files)) {
-		unlink($ftp_done_path.DIRECTORY_SEPARATOR.$file);
-		log_debug("Suppress '".$file."'");
+		// We check it's old (two days)
+		$filetime = filemtime($ftp_done_path.DIRECTORY_SEPARATOR.$file);
+		$timenow = time();
+
+		if (($timenow - $filetime) >= 3600*48) {
+			unlink($ftp_done_path.DIRECTORY_SEPARATOR.$file);
+			log_debug("Suppress '".$file."'");
+		}
+	} else {
+		touch($ftp_done_path.DIRECTORY_SEPARATOR.$file);
 	}
 }
 
@@ -83,13 +80,14 @@ log_debug("end");
  * @return TRUE ok; FALSE ko
  */
 function getftp($dirinfo) {
-	global $ftp_download_path, $ftp_download_extension, $conn_id, $ftp_done_path;
+	global $ftp_download_path, $ftp_download_extension, $conn_id, $ftp_done_path, $ftp_path;
 
 	@mkdir($ftp_download_path);
 
 	$source=preg_replace("|//|","/", $dirinfo[3].'/'.$dirinfo[2]);
-	$cibletmp = $ftp_download_path.DIRECTORY_SEPARATOR.$source.$ftp_download_extension;
-	$cible = $ftp_download_path.DIRECTORY_SEPARATOR.$source;
+	$target = preg_replace("|^".$ftp_path."(/*)|","",$source); 
+	$cibletmp = $ftp_download_path.DIRECTORY_SEPARATOR.$target.$ftp_download_extension;
+	$cible = $ftp_download_path.DIRECTORY_SEPARATOR.$target;
 
 	log_debug("...... ".$source);
 	@mkdir(dirname($cibletmp), 0777, TRUE);
@@ -97,6 +95,8 @@ function getftp($dirinfo) {
 
 	// On se deplace dans le bon repertoire ftp
 	// On lance le download
+	##var_dump($cibletmp);
+	#var_dump($source);
 	$ret = ftp_nb_get($conn_id, $cibletmp, $source, FTP_BINARY, FTP_AUTORESUME);
 	while ($ret == FTP_MOREDATA) {
 		 
@@ -157,94 +157,6 @@ function getdonefilename($dirinfo) {
 	$name = preg_replace("|^[_]*|","", $name);
 		
 	return $ftp_done_path.DIRECTORY_SEPARATOR.$name.'.done';
-}
-/**
- * Scan d'un repertoire
- * @param string $dir
- * @return un tableau de dirinfo (cf.analysedir)
- */
-function scanftpdir($dir='/') {
-	global $conn_id,$filetyps,$exectyps,$ftp_server;
-
-	// We clean '//' 
-	$dir = preg_replace("|//|","/", $dir);
-	log_debug("scanning   $dir");
-		
-	$ret = array();
-
-	// On se deplace dans le bon dir
-	$chdir=ftp_chdir($conn_id,$dir);
-
-	// on recupere la liste brute (text)
-	$dirlist = ftp_rawlist($conn_id,$dir);
-
-	// On parcourt la liste
-	for($i=0;$i<count($dirlist);$i++) {
-		$dirinfo = analysedir($dirlist[$i], $dir);
-
-		// Si c'est un repertoire (ou un lien)
-		if (($dirinfo[0]==1) || ($dirinfo[0]==2)) {
-			$newdir = "$dir/$dirinfo[2]";
-			
-			$ret = array_merge($ret, scanftpdir($newdir));
-
-			// On revient au repertoire d'avant pour continuer
-			ftp_chdir($conn_id,$dir);
-		} elseif($dirinfo[0]==0) {
-			
-			// Si ce n'est pas un .part on l'ajoute
-			if (!preg_match("/[.]part$/",$dirinfo[2])) {
-				$ret[] = $dirinfo;
-			}
-		}
-
-	}
-	return $ret;
-}
-/**
- * Methode d'analyse d'une ligne recupere d'un dir ftp (genre "drwxrwxrwx 3 eric eric 4096 Jan 26  2009 Desktop")
- * @param la ligne $dirline
- * @param le dir courant
- * @return un table (0 = tyep (2 l, 1 d, 0 f, -1 ?), 1 = taille, 2 = nom, 3 = le repertoire, 4 le nom du fichier correspondant)
- */
-function analysedir($dirline, $dir) {
-	global $systyp,$ftp_server,$stop;
-
-	if(preg_match("/([-dl])[rwxst-]{9}/",substr($dirline,0,10))) {
-		$systyp = "UNIX";
-	}
-	$dirinfo[0] = 0;
-	$dirinfo[1] = 1;
-	$dirinfo[2] = "";
-	$dirinfo[3] = $dir;
-	if(substr($dirline,0,5) == "total") {
-		$dirinfo[0] = -1;
-	} elseif($systyp=="Windows_NT") {
-		if(preg_match("/[-0-9]+ *[0-9:]+[PA]?M? +<DIR> {10}(.*)/",$dirline,$regs)) {
-			$dirinfo[0] = 1;
-			$dirinfo[1] = 0;
-			$dirinfo[2] = $regs[1];
-		} elseif(preg_match("/[-0-9]+ *[0-9:]+[PA]?M? +([0-9]+) (.*)/",$dirline,$regs)) {
-			$dirinfo[0] = 0;
-			$dirinfo[1] = $regs[1];
-			$dirinfo[2] = $regs[2];
-		}
-	} elseif($systyp=="UNIX") {
-		if(preg_match("/([-dl])[rwxst-]{9}.* ([0-9]*) [a-zA-Z]+ [0-9: ]*[0-9] (.+)/",$dirline,$regs)) {
-			$dirinfo[1] = $regs[2];
-			$dirinfo[2] = $regs[3];
-			if($regs[1]=="d")  {
-				$dirinfo[0] = 1;
-			}else if($regs[1]=="l") {
-				$dirinfo[0] = 2;
-				$dirinfo[2] = preg_replace("|[ ]*->.*$|", "", $dirinfo[2]);
-			}
-		}
-	}
-
-	if(($dirinfo[2]==".")||($dirinfo[2]=="..")) $dirinfo[0]=0;
-
-	return $dirinfo;
 }
 
 function scandonedir($dirname) {

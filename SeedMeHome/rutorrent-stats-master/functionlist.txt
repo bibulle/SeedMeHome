@@ -1,0 +1,2232 @@
+array(1115) {
+  [0]=>
+  string(18) "system.listMethods"
+  [1]=>
+  string(18) "system.methodExist"
+  [2]=>
+  string(17) "system.methodHelp"
+  [3]=>
+  string(22) "system.methodSignature"
+  [4]=>
+  string(16) "system.multicall"
+  [5]=>
+  string(15) "system.shutdown"
+  [6]=>
+  string(19) "system.capabilities"
+  [7]=>
+  string(22) "system.getCapabilities"
+  [8]=>
+  string(8) "add_peer"
+  [9]=>
+  string(3) "and"
+  [10]=>
+  string(4) "bind"
+  [11]=>
+  string(6) "branch"
+  [12]=>
+  string(3) "cat"
+  [13]=>
+  string(10) "check_hash"
+  [14]=>
+  string(27) "choke_group.down.heuristics"
+  [15]=>
+  string(31) "choke_group.down.heuristics.set"
+  [16]=>
+  string(20) "choke_group.down.max"
+  [17]=>
+  string(24) "choke_group.down.max.set"
+  [18]=>
+  string(30) "choke_group.down.max.unlimited"
+  [19]=>
+  string(23) "choke_group.down.queued"
+  [20]=>
+  string(21) "choke_group.down.rate"
+  [21]=>
+  string(22) "choke_group.down.total"
+  [22]=>
+  string(25) "choke_group.down.unchoked"
+  [23]=>
+  string(24) "choke_group.general.size"
+  [24]=>
+  string(20) "choke_group.index_of"
+  [25]=>
+  string(18) "choke_group.insert"
+  [26]=>
+  string(16) "choke_group.list"
+  [27]=>
+  string(16) "choke_group.size"
+  [28]=>
+  string(24) "choke_group.tracker.mode"
+  [29]=>
+  string(28) "choke_group.tracker.mode.set"
+  [30]=>
+  string(25) "choke_group.up.heuristics"
+  [31]=>
+  string(29) "choke_group.up.heuristics.set"
+  [32]=>
+  string(18) "choke_group.up.max"
+  [33]=>
+  string(22) "choke_group.up.max.set"
+  [34]=>
+  string(28) "choke_group.up.max.unlimited"
+  [35]=>
+  string(21) "choke_group.up.queued"
+  [36]=>
+  string(19) "choke_group.up.rate"
+  [37]=>
+  string(20) "choke_group.up.total"
+  [38]=>
+  string(23) "choke_group.up.unchoked"
+  [39]=>
+  string(19) "close_low_diskspace"
+  [40]=>
+  string(12) "close_untied"
+  [41]=>
+  string(16) "connection_leech"
+  [42]=>
+  string(15) "connection_seed"
+  [43]=>
+  string(12) "convert.date"
+  [44]=>
+  string(20) "convert.elapsed_time"
+  [45]=>
+  string(15) "convert.gm_date"
+  [46]=>
+  string(15) "convert.gm_time"
+  [47]=>
+  string(10) "convert.kb"
+  [48]=>
+  string(10) "convert.mb"
+  [49]=>
+  string(16) "convert.throttle"
+  [50]=>
+  string(12) "convert.time"
+  [51]=>
+  string(10) "convert.xb"
+  [52]=>
+  string(11) "create_link"
+  [53]=>
+  string(19) "d.accepting_seeders"
+  [54]=>
+  string(27) "d.accepting_seeders.disable"
+  [55]=>
+  string(26) "d.accepting_seeders.enable"
+  [56]=>
+  string(15) "d.base_filename"
+  [57]=>
+  string(11) "d.base_path"
+  [58]=>
+  string(10) "d.bitfield"
+  [59]=>
+  string(12) "d.bytes_done"
+  [60]=>
+  string(12) "d.check_hash"
+  [61]=>
+  string(12) "d.chunk_size"
+  [62]=>
+  string(15) "d.chunks_hashed"
+  [63]=>
+  string(13) "d.chunks_seen"
+  [64]=>
+  string(7) "d.close"
+  [65]=>
+  string(16) "d.close.directly"
+  [66]=>
+  string(10) "d.complete"
+  [67]=>
+  string(17) "d.completed_bytes"
+  [68]=>
+  string(18) "d.completed_chunks"
+  [69]=>
+  string(20) "d.connection_current"
+  [70]=>
+  string(24) "d.connection_current.set"
+  [71]=>
+  string(18) "d.connection_leech"
+  [72]=>
+  string(17) "d.connection_seed"
+  [73]=>
+  string(13) "d.create_link"
+  [74]=>
+  string(15) "d.creation_date"
+  [75]=>
+  string(8) "d.custom"
+  [76]=>
+  string(12) "d.custom.set"
+  [77]=>
+  string(9) "d.custom1"
+  [78]=>
+  string(13) "d.custom1.set"
+  [79]=>
+  string(9) "d.custom2"
+  [80]=>
+  string(13) "d.custom2.set"
+  [81]=>
+  string(9) "d.custom3"
+  [82]=>
+  string(13) "d.custom3.set"
+  [83]=>
+  string(9) "d.custom4"
+  [84]=>
+  string(13) "d.custom4.set"
+  [85]=>
+  string(9) "d.custom5"
+  [86]=>
+  string(13) "d.custom5.set"
+  [87]=>
+  string(14) "d.custom_throw"
+  [88]=>
+  string(13) "d.delete_link"
+  [89]=>
+  string(13) "d.delete_tied"
+  [90]=>
+  string(11) "d.directory"
+  [91]=>
+  string(15) "d.directory.set"
+  [92]=>
+  string(16) "d.directory_base"
+  [93]=>
+  string(20) "d.directory_base.set"
+  [94]=>
+  string(20) "d.disconnect.seeders"
+  [95]=>
+  string(23) "d.down.choke_heuristics"
+  [96]=>
+  string(29) "d.down.choke_heuristics.leech"
+  [97]=>
+  string(28) "d.down.choke_heuristics.seed"
+  [98]=>
+  string(27) "d.down.choke_heuristics.set"
+  [99]=>
+  string(11) "d.down.rate"
+  [100]=>
+  string(12) "d.down.total"
+  [101]=>
+  string(15) "d.downloads_max"
+  [102]=>
+  string(19) "d.downloads_max.set"
+  [103]=>
+  string(15) "d.downloads_min"
+  [104]=>
+  string(19) "d.downloads_min.set"
+  [105]=>
+  string(7) "d.erase"
+  [106]=>
+  string(16) "d.free_diskspace"
+  [107]=>
+  string(19) "d.get_base_filename"
+  [108]=>
+  string(15) "d.get_base_path"
+  [109]=>
+  string(14) "d.get_bitfield"
+  [110]=>
+  string(16) "d.get_bytes_done"
+  [111]=>
+  string(16) "d.get_chunk_size"
+  [112]=>
+  string(19) "d.get_chunks_hashed"
+  [113]=>
+  string(14) "d.get_complete"
+  [114]=>
+  string(21) "d.get_completed_bytes"
+  [115]=>
+  string(22) "d.get_completed_chunks"
+  [116]=>
+  string(24) "d.get_connection_current"
+  [117]=>
+  string(22) "d.get_connection_leech"
+  [118]=>
+  string(21) "d.get_connection_seed"
+  [119]=>
+  string(19) "d.get_creation_date"
+  [120]=>
+  string(12) "d.get_custom"
+  [121]=>
+  string(13) "d.get_custom1"
+  [122]=>
+  string(13) "d.get_custom2"
+  [123]=>
+  string(13) "d.get_custom3"
+  [124]=>
+  string(13) "d.get_custom4"
+  [125]=>
+  string(13) "d.get_custom5"
+  [126]=>
+  string(18) "d.get_custom_throw"
+  [127]=>
+  string(15) "d.get_directory"
+  [128]=>
+  string(20) "d.get_directory_base"
+  [129]=>
+  string(15) "d.get_down_rate"
+  [130]=>
+  string(16) "d.get_down_total"
+  [131]=>
+  string(20) "d.get_free_diskspace"
+  [132]=>
+  string(10) "d.get_hash"
+  [133]=>
+  string(13) "d.get_hashing"
+  [134]=>
+  string(20) "d.get_hashing_failed"
+  [135]=>
+  string(21) "d.get_ignore_commands"
+  [136]=>
+  string(16) "d.get_left_bytes"
+  [137]=>
+  string(17) "d.get_loaded_file"
+  [138]=>
+  string(14) "d.get_local_id"
+  [139]=>
+  string(19) "d.get_local_id_html"
+  [140]=>
+  string(19) "d.get_max_file_size"
+  [141]=>
+  string(18) "d.get_max_size_pex"
+  [142]=>
+  string(13) "d.get_message"
+  [143]=>
+  string(10) "d.get_mode"
+  [144]=>
+  string(10) "d.get_name"
+  [145]=>
+  string(19) "d.get_peer_exchange"
+  [146]=>
+  string(21) "d.get_peers_accounted"
+  [147]=>
+  string(20) "d.get_peers_complete"
+  [148]=>
+  string(21) "d.get_peers_connected"
+  [149]=>
+  string(15) "d.get_peers_max"
+  [150]=>
+  string(15) "d.get_peers_min"
+  [151]=>
+  string(25) "d.get_peers_not_connected"
+  [152]=>
+  string(14) "d.get_priority"
+  [153]=>
+  string(18) "d.get_priority_str"
+  [154]=>
+  string(11) "d.get_ratio"
+  [155]=>
+  string(16) "d.get_size_bytes"
+  [156]=>
+  string(17) "d.get_size_chunks"
+  [157]=>
+  string(16) "d.get_size_files"
+  [158]=>
+  string(14) "d.get_size_pex"
+  [159]=>
+  string(15) "d.get_skip_rate"
+  [160]=>
+  string(16) "d.get_skip_total"
+  [161]=>
+  string(11) "d.get_state"
+  [162]=>
+  string(19) "d.get_state_changed"
+  [163]=>
+  string(19) "d.get_state_counter"
+  [164]=>
+  string(19) "d.get_throttle_name"
+  [165]=>
+  string(18) "d.get_tied_to_file"
+  [166]=>
+  string(19) "d.get_tracker_focus"
+  [167]=>
+  string(21) "d.get_tracker_numwant"
+  [168]=>
+  string(18) "d.get_tracker_size"
+  [169]=>
+  string(13) "d.get_up_rate"
+  [170]=>
+  string(14) "d.get_up_total"
+  [171]=>
+  string(17) "d.get_uploads_max"
+  [172]=>
+  string(7) "d.group"
+  [173]=>
+  string(12) "d.group.name"
+  [174]=>
+  string(11) "d.group.set"
+  [175]=>
+  string(6) "d.hash"
+  [176]=>
+  string(9) "d.hashing"
+  [177]=>
+  string(16) "d.hashing_failed"
+  [178]=>
+  string(20) "d.hashing_failed.set"
+  [179]=>
+  string(17) "d.ignore_commands"
+  [180]=>
+  string(21) "d.ignore_commands.set"
+  [181]=>
+  string(12) "d.incomplete"
+  [182]=>
+  string(17) "d.initialize_logs"
+  [183]=>
+  string(11) "d.is_active"
+  [184]=>
+  string(17) "d.is_hash_checked"
+  [185]=>
+  string(18) "d.is_hash_checking"
+  [186]=>
+  string(15) "d.is_multi_file"
+  [187]=>
+  string(23) "d.is_not_partially_done"
+  [188]=>
+  string(9) "d.is_open"
+  [189]=>
+  string(19) "d.is_partially_done"
+  [190]=>
+  string(15) "d.is_pex_active"
+  [191]=>
+  string(12) "d.is_private"
+  [192]=>
+  string(12) "d.left_bytes"
+  [193]=>
+  string(11) "d.load_date"
+  [194]=>
+  string(13) "d.loaded_file"
+  [195]=>
+  string(10) "d.local_id"
+  [196]=>
+  string(15) "d.local_id_html"
+  [197]=>
+  string(15) "d.max_file_size"
+  [198]=>
+  string(19) "d.max_file_size.set"
+  [199]=>
+  string(14) "d.max_size_pex"
+  [200]=>
+  string(9) "d.message"
+  [201]=>
+  string(13) "d.message.set"
+  [202]=>
+  string(6) "d.mode"
+  [203]=>
+  string(11) "d.multicall"
+  [204]=>
+  string(12) "d.multicall2"
+  [205]=>
+  string(6) "d.name"
+  [206]=>
+  string(6) "d.open"
+  [207]=>
+  string(7) "d.pause"
+  [208]=>
+  string(15) "d.peer_exchange"
+  [209]=>
+  string(19) "d.peer_exchange.set"
+  [210]=>
+  string(17) "d.peers_accounted"
+  [211]=>
+  string(16) "d.peers_complete"
+  [212]=>
+  string(17) "d.peers_connected"
+  [213]=>
+  string(11) "d.peers_max"
+  [214]=>
+  string(15) "d.peers_max.set"
+  [215]=>
+  string(11) "d.peers_min"
+  [216]=>
+  string(15) "d.peers_min.set"
+  [217]=>
+  string(21) "d.peers_not_connected"
+  [218]=>
+  string(10) "d.priority"
+  [219]=>
+  string(14) "d.priority.set"
+  [220]=>
+  string(14) "d.priority_str"
+  [221]=>
+  string(7) "d.ratio"
+  [222]=>
+  string(8) "d.resume"
+  [223]=>
+  string(19) "d.save_full_session"
+  [224]=>
+  string(13) "d.save_resume"
+  [225]=>
+  string(24) "d.set_connection_current"
+  [226]=>
+  string(12) "d.set_custom"
+  [227]=>
+  string(13) "d.set_custom1"
+  [228]=>
+  string(13) "d.set_custom2"
+  [229]=>
+  string(13) "d.set_custom3"
+  [230]=>
+  string(13) "d.set_custom4"
+  [231]=>
+  string(13) "d.set_custom5"
+  [232]=>
+  string(15) "d.set_directory"
+  [233]=>
+  string(20) "d.set_directory_base"
+  [234]=>
+  string(20) "d.set_hashing_failed"
+  [235]=>
+  string(21) "d.set_ignore_commands"
+  [236]=>
+  string(19) "d.set_max_file_size"
+  [237]=>
+  string(13) "d.set_message"
+  [238]=>
+  string(15) "d.set_peers_max"
+  [239]=>
+  string(15) "d.set_peers_min"
+  [240]=>
+  string(14) "d.set_priority"
+  [241]=>
+  string(19) "d.set_throttle_name"
+  [242]=>
+  string(18) "d.set_tied_to_file"
+  [243]=>
+  string(21) "d.set_tracker_numwant"
+  [244]=>
+  string(17) "d.set_uploads_max"
+  [245]=>
+  string(12) "d.size_bytes"
+  [246]=>
+  string(13) "d.size_chunks"
+  [247]=>
+  string(12) "d.size_files"
+  [248]=>
+  string(10) "d.size_pex"
+  [249]=>
+  string(11) "d.skip.rate"
+  [250]=>
+  string(12) "d.skip.total"
+  [251]=>
+  string(7) "d.start"
+  [252]=>
+  string(7) "d.state"
+  [253]=>
+  string(15) "d.state_changed"
+  [254]=>
+  string(15) "d.state_counter"
+  [255]=>
+  string(6) "d.stop"
+  [256]=>
+  string(15) "d.throttle_name"
+  [257]=>
+  string(19) "d.throttle_name.set"
+  [258]=>
+  string(14) "d.tied_to_file"
+  [259]=>
+  string(18) "d.tied_to_file.set"
+  [260]=>
+  string(20) "d.timestamp.finished"
+  [261]=>
+  string(19) "d.timestamp.started"
+  [262]=>
+  string(16) "d.tracker.insert"
+  [263]=>
+  string(21) "d.tracker.send_scrape"
+  [264]=>
+  string(18) "d.tracker_announce"
+  [265]=>
+  string(15) "d.tracker_focus"
+  [266]=>
+  string(17) "d.tracker_numwant"
+  [267]=>
+  string(21) "d.tracker_numwant.set"
+  [268]=>
+  string(14) "d.tracker_size"
+  [269]=>
+  string(11) "d.try_close"
+  [270]=>
+  string(11) "d.try_start"
+  [271]=>
+  string(10) "d.try_stop"
+  [272]=>
+  string(21) "d.up.choke_heuristics"
+  [273]=>
+  string(27) "d.up.choke_heuristics.leech"
+  [274]=>
+  string(26) "d.up.choke_heuristics.seed"
+  [275]=>
+  string(25) "d.up.choke_heuristics.set"
+  [276]=>
+  string(9) "d.up.rate"
+  [277]=>
+  string(10) "d.up.total"
+  [278]=>
+  string(19) "d.update_priorities"
+  [279]=>
+  string(13) "d.uploads_max"
+  [280]=>
+  string(17) "d.uploads_max.set"
+  [281]=>
+  string(13) "d.uploads_min"
+  [282]=>
+  string(17) "d.uploads_min.set"
+  [283]=>
+  string(7) "d.views"
+  [284]=>
+  string(11) "d.views.has"
+  [285]=>
+  string(17) "d.views.push_back"
+  [286]=>
+  string(24) "d.views.push_back_unique"
+  [287]=>
+  string(14) "d.views.remove"
+  [288]=>
+  string(15) "d.wanted_chunks"
+  [289]=>
+  string(11) "delete_link"
+  [290]=>
+  string(11) "delete_tied"
+  [291]=>
+  string(3) "dht"
+  [292]=>
+  string(12) "dht.add_node"
+  [293]=>
+  string(12) "dht.mode.set"
+  [294]=>
+  string(8) "dht.port"
+  [295]=>
+  string(12) "dht.port.set"
+  [296]=>
+  string(14) "dht.statistics"
+  [297]=>
+  string(17) "dht.throttle.name"
+  [298]=>
+  string(21) "dht.throttle.name.set"
+  [299]=>
+  string(12) "dht_add_node"
+  [300]=>
+  string(8) "dht_port"
+  [301]=>
+  string(14) "dht_statistics"
+  [302]=>
+  string(9) "directory"
+  [303]=>
+  string(17) "directory.default"
+  [304]=>
+  string(21) "directory.default.set"
+  [305]=>
+  string(13) "download_list"
+  [306]=>
+  string(13) "download_rate"
+  [307]=>
+  string(15) "elapsed.greater"
+  [308]=>
+  string(12) "elapsed.less"
+  [309]=>
+  string(12) "encoding.add"
+  [310]=>
+  string(13) "encoding_list"
+  [311]=>
+  string(10) "encryption"
+  [312]=>
+  string(5) "equal"
+  [313]=>
+  string(21) "event.download.closed"
+  [314]=>
+  string(21) "event.download.erased"
+  [315]=>
+  string(23) "event.download.finished"
+  [316]=>
+  string(24) "event.download.hash_done"
+  [317]=>
+  string(26) "event.download.hash_failed"
+  [318]=>
+  string(32) "event.download.hash_final_failed"
+  [319]=>
+  string(26) "event.download.hash_queued"
+  [320]=>
+  string(27) "event.download.hash_removed"
+  [321]=>
+  string(23) "event.download.inserted"
+  [322]=>
+  string(27) "event.download.inserted_new"
+  [323]=>
+  string(31) "event.download.inserted_session"
+  [324]=>
+  string(21) "event.download.opened"
+  [325]=>
+  string(21) "event.download.paused"
+  [326]=>
+  string(22) "event.download.resumed"
+  [327]=>
+  string(7) "execute"
+  [328]=>
+  string(15) "execute.capture"
+  [329]=>
+  string(23) "execute.capture_nothrow"
+  [330]=>
+  string(15) "execute.nothrow"
+  [331]=>
+  string(18) "execute.nothrow.bg"
+  [332]=>
+  string(11) "execute.raw"
+  [333]=>
+  string(14) "execute.raw.bg"
+  [334]=>
+  string(19) "execute.raw_nothrow"
+  [335]=>
+  string(22) "execute.raw_nothrow.bg"
+  [336]=>
+  string(13) "execute.throw"
+  [337]=>
+  string(16) "execute.throw.bg"
+  [338]=>
+  string(8) "execute2"
+  [339]=>
+  string(15) "execute_capture"
+  [340]=>
+  string(23) "execute_capture_nothrow"
+  [341]=>
+  string(15) "execute_nothrow"
+  [342]=>
+  string(11) "execute_raw"
+  [343]=>
+  string(19) "execute_raw_nothrow"
+  [344]=>
+  string(13) "execute_throw"
+  [345]=>
+  string(18) "f.completed_chunks"
+  [346]=>
+  string(13) "f.frozen_path"
+  [347]=>
+  string(22) "f.get_completed_chunks"
+  [348]=>
+  string(17) "f.get_frozen_path"
+  [349]=>
+  string(18) "f.get_last_touched"
+  [350]=>
+  string(22) "f.get_match_depth_next"
+  [351]=>
+  string(22) "f.get_match_depth_prev"
+  [352]=>
+  string(12) "f.get_offset"
+  [353]=>
+  string(10) "f.get_path"
+  [354]=>
+  string(21) "f.get_path_components"
+  [355]=>
+  string(16) "f.get_path_depth"
+  [356]=>
+  string(14) "f.get_priority"
+  [357]=>
+  string(17) "f.get_range_first"
+  [358]=>
+  string(18) "f.get_range_second"
+  [359]=>
+  string(16) "f.get_size_bytes"
+  [360]=>
+  string(17) "f.get_size_chunks"
+  [361]=>
+  string(18) "f.is_create_queued"
+  [362]=>
+  string(12) "f.is_created"
+  [363]=>
+  string(9) "f.is_open"
+  [364]=>
+  string(18) "f.is_resize_queued"
+  [365]=>
+  string(14) "f.last_touched"
+  [366]=>
+  string(18) "f.match_depth_next"
+  [367]=>
+  string(18) "f.match_depth_prev"
+  [368]=>
+  string(11) "f.multicall"
+  [369]=>
+  string(8) "f.offset"
+  [370]=>
+  string(6) "f.path"
+  [371]=>
+  string(17) "f.path_components"
+  [372]=>
+  string(12) "f.path_depth"
+  [373]=>
+  string(18) "f.prioritize_first"
+  [374]=>
+  string(26) "f.prioritize_first.disable"
+  [375]=>
+  string(25) "f.prioritize_first.enable"
+  [376]=>
+  string(17) "f.prioritize_last"
+  [377]=>
+  string(25) "f.prioritize_last.disable"
+  [378]=>
+  string(24) "f.prioritize_last.enable"
+  [379]=>
+  string(10) "f.priority"
+  [380]=>
+  string(14) "f.priority.set"
+  [381]=>
+  string(13) "f.range_first"
+  [382]=>
+  string(14) "f.range_second"
+  [383]=>
+  string(19) "f.set_create_queued"
+  [384]=>
+  string(14) "f.set_priority"
+  [385]=>
+  string(19) "f.set_resize_queued"
+  [386]=>
+  string(12) "f.size_bytes"
+  [387]=>
+  string(13) "f.size_chunks"
+  [388]=>
+  string(21) "f.unset_create_queued"
+  [389]=>
+  string(21) "f.unset_resize_queued"
+  [390]=>
+  string(5) "false"
+  [391]=>
+  string(16) "fi.filename_last"
+  [392]=>
+  string(20) "fi.get_filename_last"
+  [393]=>
+  string(10) "fi.is_file"
+  [394]=>
+  string(11) "file.append"
+  [395]=>
+  string(19) "file.prioritize_toc"
+  [396]=>
+  string(25) "file.prioritize_toc.first"
+  [397]=>
+  string(35) "file.prioritize_toc.first.push_back"
+  [398]=>
+  string(29) "file.prioritize_toc.first.set"
+  [399]=>
+  string(24) "file.prioritize_toc.last"
+  [400]=>
+  string(34) "file.prioritize_toc.last.push_back"
+  [401]=>
+  string(28) "file.prioritize_toc.last.set"
+  [402]=>
+  string(23) "file.prioritize_toc.set"
+  [403]=>
+  string(8) "get_bind"
+  [404]=>
+  string(14) "get_check_hash"
+  [405]=>
+  string(20) "get_connection_leech"
+  [406]=>
+  string(19) "get_connection_seed"
+  [407]=>
+  string(12) "get_dht_port"
+  [408]=>
+  string(16) "get_dht_throttle"
+  [409]=>
+  string(13) "get_directory"
+  [410]=>
+  string(13) "get_down_rate"
+  [411]=>
+  string(14) "get_down_total"
+  [412]=>
+  string(17) "get_download_rate"
+  [413]=>
+  string(17) "get_handshake_log"
+  [414]=>
+  string(15) "get_http_cacert"
+  [415]=>
+  string(15) "get_http_capath"
+  [416]=>
+  string(14) "get_http_proxy"
+  [417]=>
+  string(6) "get_ip"
+  [418]=>
+  string(21) "get_max_downloads_div"
+  [419]=>
+  string(24) "get_max_downloads_global"
+  [420]=>
+  string(17) "get_max_file_size"
+  [421]=>
+  string(20) "get_max_memory_usage"
+  [422]=>
+  string(18) "get_max_open_files"
+  [423]=>
+  string(17) "get_max_open_http"
+  [424]=>
+  string(20) "get_max_open_sockets"
+  [425]=>
+  string(13) "get_max_peers"
+  [426]=>
+  string(18) "get_max_peers_seed"
+  [427]=>
+  string(15) "get_max_uploads"
+  [428]=>
+  string(19) "get_max_uploads_div"
+  [429]=>
+  string(22) "get_max_uploads_global"
+  [430]=>
+  string(16) "get_memory_usage"
+  [431]=>
+  string(13) "get_min_peers"
+  [432]=>
+  string(18) "get_min_peers_seed"
+  [433]=>
+  string(8) "get_name"
+  [434]=>
+  string(17) "get_peer_exchange"
+  [435]=>
+  string(13) "get_port_open"
+  [436]=>
+  string(15) "get_port_random"
+  [437]=>
+  string(14) "get_port_range"
+  [438]=>
+  string(20) "get_preload_min_size"
+  [439]=>
+  string(25) "get_preload_required_rate"
+  [440]=>
+  string(16) "get_preload_type"
+  [441]=>
+  string(17) "get_proxy_address"
+  [442]=>
+  string(23) "get_receive_buffer_size"
+  [443]=>
+  string(13) "get_safe_sync"
+  [444]=>
+  string(19) "get_scgi_dont_route"
+  [445]=>
+  string(20) "get_send_buffer_size"
+  [446]=>
+  string(11) "get_session"
+  [447]=>
+  string(16) "get_session_lock"
+  [448]=>
+  string(25) "get_session_on_completion"
+  [449]=>
+  string(19) "get_split_file_size"
+  [450]=>
+  string(16) "get_split_suffix"
+  [451]=>
+  string(23) "get_stats_not_preloaded"
+  [452]=>
+  string(19) "get_stats_preloaded"
+  [453]=>
+  string(21) "get_throttle_down_max"
+  [454]=>
+  string(22) "get_throttle_down_rate"
+  [455]=>
+  string(19) "get_throttle_up_max"
+  [456]=>
+  string(20) "get_throttle_up_rate"
+  [457]=>
+  string(21) "get_timeout_safe_sync"
+  [458]=>
+  string(16) "get_timeout_sync"
+  [459]=>
+  string(19) "get_tracker_numwant"
+  [460]=>
+  string(11) "get_up_rate"
+  [461]=>
+  string(12) "get_up_total"
+  [462]=>
+  string(15) "get_upload_rate"
+  [463]=>
+  string(20) "get_use_udp_trackers"
+  [464]=>
+  string(21) "get_xmlrpc_size_limit"
+  [465]=>
+  string(7) "greater"
+  [466]=>
+  string(12) "group.insert"
+  [467]=>
+  string(28) "group.insert_persistent_view"
+  [468]=>
+  string(27) "group.seeding.ratio.command"
+  [469]=>
+  string(27) "group.seeding.ratio.disable"
+  [470]=>
+  string(26) "group.seeding.ratio.enable"
+  [471]=>
+  string(23) "group.seeding.ratio.max"
+  [472]=>
+  string(27) "group.seeding.ratio.max.set"
+  [473]=>
+  string(23) "group.seeding.ratio.min"
+  [474]=>
+  string(27) "group.seeding.ratio.min.set"
+  [475]=>
+  string(26) "group.seeding.ratio.upload"
+  [476]=>
+  string(30) "group.seeding.ratio.upload.set"
+  [477]=>
+  string(18) "group.seeding.view"
+  [478]=>
+  string(22) "group.seeding.view.set"
+  [479]=>
+  string(24) "group2.seeding.ratio.max"
+  [480]=>
+  string(28) "group2.seeding.ratio.max.set"
+  [481]=>
+  string(24) "group2.seeding.ratio.min"
+  [482]=>
+  string(28) "group2.seeding.ratio.min.set"
+  [483]=>
+  string(27) "group2.seeding.ratio.upload"
+  [484]=>
+  string(31) "group2.seeding.ratio.upload.set"
+  [485]=>
+  string(19) "group2.seeding.view"
+  [486]=>
+  string(23) "group2.seeding.view.set"
+  [487]=>
+  string(11) "http_cacert"
+  [488]=>
+  string(11) "http_capath"
+  [489]=>
+  string(10) "http_proxy"
+  [490]=>
+  string(2) "if"
+  [491]=>
+  string(6) "import"
+  [492]=>
+  string(2) "ip"
+  [493]=>
+  string(21) "ip_tables.add_address"
+  [494]=>
+  string(13) "ip_tables.get"
+  [495]=>
+  string(22) "ip_tables.insert_table"
+  [496]=>
+  string(19) "ip_tables.size_data"
+  [497]=>
+  string(23) "ipv4_filter.add_address"
+  [498]=>
+  string(16) "ipv4_filter.dump"
+  [499]=>
+  string(15) "ipv4_filter.get"
+  [500]=>
+  string(16) "ipv4_filter.load"
+  [501]=>
+  string(21) "ipv4_filter.size_data"
+  [502]=>
+  string(10) "key_layout"
+  [503]=>
+  string(11) "keys.layout"
+  [504]=>
+  string(15) "keys.layout.set"
+  [505]=>
+  string(4) "less"
+  [506]=>
+  string(4) "load"
+  [507]=>
+  string(11) "load.normal"
+  [508]=>
+  string(8) "load.raw"
+  [509]=>
+  string(14) "load.raw_start"
+  [510]=>
+  string(16) "load.raw_verbose"
+  [511]=>
+  string(10) "load.start"
+  [512]=>
+  string(18) "load.start_verbose"
+  [513]=>
+  string(12) "load.verbose"
+  [514]=>
+  string(8) "load_raw"
+  [515]=>
+  string(14) "load_raw_start"
+  [516]=>
+  string(16) "load_raw_verbose"
+  [517]=>
+  string(10) "load_start"
+  [518]=>
+  string(18) "load_start_verbose"
+  [519]=>
+  string(12) "load_verbose"
+  [520]=>
+  string(14) "log.add_output"
+  [521]=>
+  string(11) "log.execute"
+  [522]=>
+  string(13) "log.handshake"
+  [523]=>
+  string(17) "log.handshake.set"
+  [524]=>
+  string(14) "log.libtorrent"
+  [525]=>
+  string(13) "log.open_file"
+  [526]=>
+  string(14) "log.vmmap.dump"
+  [527]=>
+  string(10) "log.xmlrpc"
+  [528]=>
+  string(13) "max_downloads"
+  [529]=>
+  string(17) "max_downloads_div"
+  [530]=>
+  string(20) "max_downloads_global"
+  [531]=>
+  string(16) "max_memory_usage"
+  [532]=>
+  string(9) "max_peers"
+  [533]=>
+  string(14) "max_peers_seed"
+  [534]=>
+  string(11) "max_uploads"
+  [535]=>
+  string(15) "max_uploads_div"
+  [536]=>
+  string(18) "max_uploads_global"
+  [537]=>
+  string(12) "method.const"
+  [538]=>
+  string(19) "method.const.enable"
+  [539]=>
+  string(12) "method.erase"
+  [540]=>
+  string(10) "method.get"
+  [541]=>
+  string(14) "method.has_key"
+  [542]=>
+  string(13) "method.insert"
+  [543]=>
+  string(22) "method.insert.c_simple"
+  [544]=>
+  string(24) "method.insert.s_c_simple"
+  [545]=>
+  string(20) "method.insert.simple"
+  [546]=>
+  string(19) "method.insert.value"
+  [547]=>
+  string(16) "method.list_keys"
+  [548]=>
+  string(15) "method.redirect"
+  [549]=>
+  string(14) "method.rlookup"
+  [550]=>
+  string(20) "method.rlookup.clear"
+  [551]=>
+  string(10) "method.set"
+  [552]=>
+  string(14) "method.set_key"
+  [553]=>
+  string(21) "method.use_deprecated"
+  [554]=>
+  string(25) "method.use_deprecated.set"
+  [555]=>
+  string(23) "method.use_intermediate"
+  [556]=>
+  string(27) "method.use_intermediate.set"
+  [557]=>
+  string(13) "min_downloads"
+  [558]=>
+  string(9) "min_peers"
+  [559]=>
+  string(14) "min_peers_seed"
+  [560]=>
+  string(11) "min_uploads"
+  [561]=>
+  string(20) "network.bind_address"
+  [562]=>
+  string(24) "network.bind_address.set"
+  [563]=>
+  string(19) "network.http.cacert"
+  [564]=>
+  string(23) "network.http.cacert.set"
+  [565]=>
+  string(19) "network.http.capath"
+  [566]=>
+  string(23) "network.http.capath.set"
+  [567]=>
+  string(30) "network.http.dns_cache_timeout"
+  [568]=>
+  string(34) "network.http.dns_cache_timeout.set"
+  [569]=>
+  string(21) "network.http.max_open"
+  [570]=>
+  string(25) "network.http.max_open.set"
+  [571]=>
+  string(26) "network.http.proxy_address"
+  [572]=>
+  string(30) "network.http.proxy_address.set"
+  [573]=>
+  string(28) "network.http.ssl_verify_peer"
+  [574]=>
+  string(32) "network.http.ssl_verify_peer.set"
+  [575]=>
+  string(19) "network.listen.port"
+  [576]=>
+  string(21) "network.local_address"
+  [577]=>
+  string(25) "network.local_address.set"
+  [578]=>
+  string(22) "network.max_open_files"
+  [579]=>
+  string(26) "network.max_open_files.set"
+  [580]=>
+  string(24) "network.max_open_sockets"
+  [581]=>
+  string(28) "network.max_open_sockets.set"
+  [582]=>
+  string(20) "network.open_sockets"
+  [583]=>
+  string(17) "network.port_open"
+  [584]=>
+  string(21) "network.port_open.set"
+  [585]=>
+  string(19) "network.port_random"
+  [586]=>
+  string(23) "network.port_random.set"
+  [587]=>
+  string(18) "network.port_range"
+  [588]=>
+  string(22) "network.port_range.set"
+  [589]=>
+  string(21) "network.proxy_address"
+  [590]=>
+  string(25) "network.proxy_address.set"
+  [591]=>
+  string(27) "network.receive_buffer.size"
+  [592]=>
+  string(31) "network.receive_buffer.size.set"
+  [593]=>
+  string(23) "network.scgi.dont_route"
+  [594]=>
+  string(27) "network.scgi.dont_route.set"
+  [595]=>
+  string(23) "network.scgi.open_local"
+  [596]=>
+  string(22) "network.scgi.open_port"
+  [597]=>
+  string(24) "network.send_buffer.size"
+  [598]=>
+  string(28) "network.send_buffer.size.set"
+  [599]=>
+  string(15) "network.tos.set"
+  [600]=>
+  string(26) "network.xmlrpc.dialect.set"
+  [601]=>
+  string(25) "network.xmlrpc.size_limit"
+  [602]=>
+  string(29) "network.xmlrpc.size_limit.set"
+  [603]=>
+  string(3) "not"
+  [604]=>
+  string(8) "on_ratio"
+  [605]=>
+  string(2) "or"
+  [606]=>
+  string(9) "p.address"
+  [607]=>
+  string(8) "p.banned"
+  [608]=>
+  string(12) "p.banned.set"
+  [609]=>
+  string(13) "p.call_target"
+  [610]=>
+  string(16) "p.client_version"
+  [611]=>
+  string(19) "p.completed_percent"
+  [612]=>
+  string(12) "p.disconnect"
+  [613]=>
+  string(20) "p.disconnect_delayed"
+  [614]=>
+  string(11) "p.down_rate"
+  [615]=>
+  string(12) "p.down_total"
+  [616]=>
+  string(13) "p.get_address"
+  [617]=>
+  string(20) "p.get_client_version"
+  [618]=>
+  string(23) "p.get_completed_percent"
+  [619]=>
+  string(15) "p.get_down_rate"
+  [620]=>
+  string(16) "p.get_down_total"
+  [621]=>
+  string(8) "p.get_id"
+  [622]=>
+  string(13) "p.get_id_html"
+  [623]=>
+  string(17) "p.get_options_str"
+  [624]=>
+  string(15) "p.get_peer_rate"
+  [625]=>
+  string(16) "p.get_peer_total"
+  [626]=>
+  string(10) "p.get_port"
+  [627]=>
+  string(13) "p.get_up_rate"
+  [628]=>
+  string(14) "p.get_up_total"
+  [629]=>
+  string(4) "p.id"
+  [630]=>
+  string(9) "p.id_html"
+  [631]=>
+  string(14) "p.is_encrypted"
+  [632]=>
+  string(13) "p.is_incoming"
+  [633]=>
+  string(15) "p.is_obfuscated"
+  [634]=>
+  string(14) "p.is_preferred"
+  [635]=>
+  string(12) "p.is_snubbed"
+  [636]=>
+  string(13) "p.is_unwanted"
+  [637]=>
+  string(11) "p.multicall"
+  [638]=>
+  string(13) "p.options_str"
+  [639]=>
+  string(11) "p.peer_rate"
+  [640]=>
+  string(12) "p.peer_total"
+  [641]=>
+  string(6) "p.port"
+  [642]=>
+  string(9) "p.snubbed"
+  [643]=>
+  string(13) "p.snubbed.set"
+  [644]=>
+  string(9) "p.up_rate"
+  [645]=>
+  string(10) "p.up_total"
+  [646]=>
+  string(13) "peer_exchange"
+  [647]=>
+  string(25) "pieces.hash.on_completion"
+  [648]=>
+  string(29) "pieces.hash.on_completion.set"
+  [649]=>
+  string(22) "pieces.hash.queue_size"
+  [650]=>
+  string(25) "pieces.memory.block_count"
+  [651]=>
+  string(21) "pieces.memory.current"
+  [652]=>
+  string(17) "pieces.memory.max"
+  [653]=>
+  string(21) "pieces.memory.max.set"
+  [654]=>
+  string(24) "pieces.memory.sync_queue"
+  [655]=>
+  string(23) "pieces.preload.min_rate"
+  [656]=>
+  string(27) "pieces.preload.min_rate.set"
+  [657]=>
+  string(23) "pieces.preload.min_size"
+  [658]=>
+  string(27) "pieces.preload.min_size.set"
+  [659]=>
+  string(19) "pieces.preload.type"
+  [660]=>
+  string(23) "pieces.preload.type.set"
+  [661]=>
+  string(23) "pieces.stats.total_size"
+  [662]=>
+  string(26) "pieces.stats_not_preloaded"
+  [663]=>
+  string(22) "pieces.stats_preloaded"
+  [664]=>
+  string(23) "pieces.sync.always_safe"
+  [665]=>
+  string(27) "pieces.sync.always_safe.set"
+  [666]=>
+  string(22) "pieces.sync.queue_size"
+  [667]=>
+  string(31) "pieces.sync.safe_free_diskspace"
+  [668]=>
+  string(19) "pieces.sync.timeout"
+  [669]=>
+  string(23) "pieces.sync.timeout.set"
+  [670]=>
+  string(24) "pieces.sync.timeout_safe"
+  [671]=>
+  string(28) "pieces.sync.timeout_safe.set"
+  [672]=>
+  string(9) "port_open"
+  [673]=>
+  string(11) "port_random"
+  [674]=>
+  string(10) "port_range"
+  [675]=>
+  string(5) "print"
+  [676]=>
+  string(36) "protocol.choke_heuristics.down.leech"
+  [677]=>
+  string(40) "protocol.choke_heuristics.down.leech.set"
+  [678]=>
+  string(35) "protocol.choke_heuristics.down.seed"
+  [679]=>
+  string(39) "protocol.choke_heuristics.down.seed.set"
+  [680]=>
+  string(34) "protocol.choke_heuristics.up.leech"
+  [681]=>
+  string(38) "protocol.choke_heuristics.up.leech.set"
+  [682]=>
+  string(33) "protocol.choke_heuristics.up.seed"
+  [683]=>
+  string(37) "protocol.choke_heuristics.up.seed.set"
+  [684]=>
+  string(25) "protocol.connection.leech"
+  [685]=>
+  string(29) "protocol.connection.leech.set"
+  [686]=>
+  string(24) "protocol.connection.seed"
+  [687]=>
+  string(28) "protocol.connection.seed.set"
+  [688]=>
+  string(23) "protocol.encryption.set"
+  [689]=>
+  string(12) "protocol.pex"
+  [690]=>
+  string(16) "protocol.pex.set"
+  [691]=>
+  string(13) "proxy_address"
+  [692]=>
+  string(13) "ratio.disable"
+  [693]=>
+  string(12) "ratio.enable"
+  [694]=>
+  string(9) "ratio.max"
+  [695]=>
+  string(13) "ratio.max.set"
+  [696]=>
+  string(9) "ratio.min"
+  [697]=>
+  string(13) "ratio.min.set"
+  [698]=>
+  string(12) "ratio.upload"
+  [699]=>
+  string(16) "ratio.upload.set"
+  [700]=>
+  string(13) "remove_untied"
+  [701]=>
+  string(15) "scgi_dont_route"
+  [702]=>
+  string(10) "scgi_local"
+  [703]=>
+  string(9) "scgi_port"
+  [704]=>
+  string(8) "schedule"
+  [705]=>
+  string(9) "schedule2"
+  [706]=>
+  string(15) "schedule_remove"
+  [707]=>
+  string(16) "schedule_remove2"
+  [708]=>
+  string(20) "scheduler.max_active"
+  [709]=>
+  string(24) "scheduler.max_active.set"
+  [710]=>
+  string(22) "scheduler.simple.added"
+  [711]=>
+  string(24) "scheduler.simple.removed"
+  [712]=>
+  string(23) "scheduler.simple.update"
+  [713]=>
+  string(7) "session"
+  [714]=>
+  string(12) "session.name"
+  [715]=>
+  string(16) "session.name.set"
+  [716]=>
+  string(21) "session.on_completion"
+  [717]=>
+  string(25) "session.on_completion.set"
+  [718]=>
+  string(12) "session.path"
+  [719]=>
+  string(16) "session.path.set"
+  [720]=>
+  string(12) "session.save"
+  [721]=>
+  string(16) "session.use_lock"
+  [722]=>
+  string(20) "session.use_lock.set"
+  [723]=>
+  string(12) "session_save"
+  [724]=>
+  string(8) "set_bind"
+  [725]=>
+  string(14) "set_check_hash"
+  [726]=>
+  string(20) "set_connection_leech"
+  [727]=>
+  string(19) "set_connection_seed"
+  [728]=>
+  string(12) "set_dht_port"
+  [729]=>
+  string(16) "set_dht_throttle"
+  [730]=>
+  string(13) "set_directory"
+  [731]=>
+  string(17) "set_download_rate"
+  [732]=>
+  string(17) "set_handshake_log"
+  [733]=>
+  string(15) "set_http_cacert"
+  [734]=>
+  string(15) "set_http_capath"
+  [735]=>
+  string(14) "set_http_proxy"
+  [736]=>
+  string(6) "set_ip"
+  [737]=>
+  string(21) "set_max_downloads_div"
+  [738]=>
+  string(24) "set_max_downloads_global"
+  [739]=>
+  string(17) "set_max_file_size"
+  [740]=>
+  string(20) "set_max_memory_usage"
+  [741]=>
+  string(18) "set_max_open_files"
+  [742]=>
+  string(17) "set_max_open_http"
+  [743]=>
+  string(13) "set_max_peers"
+  [744]=>
+  string(18) "set_max_peers_seed"
+  [745]=>
+  string(15) "set_max_uploads"
+  [746]=>
+  string(19) "set_max_uploads_div"
+  [747]=>
+  string(22) "set_max_uploads_global"
+  [748]=>
+  string(13) "set_min_peers"
+  [749]=>
+  string(18) "set_min_peers_seed"
+  [750]=>
+  string(8) "set_name"
+  [751]=>
+  string(17) "set_peer_exchange"
+  [752]=>
+  string(13) "set_port_open"
+  [753]=>
+  string(15) "set_port_random"
+  [754]=>
+  string(14) "set_port_range"
+  [755]=>
+  string(20) "set_preload_min_size"
+  [756]=>
+  string(25) "set_preload_required_rate"
+  [757]=>
+  string(16) "set_preload_type"
+  [758]=>
+  string(17) "set_proxy_address"
+  [759]=>
+  string(23) "set_receive_buffer_size"
+  [760]=>
+  string(13) "set_safe_sync"
+  [761]=>
+  string(19) "set_scgi_dont_route"
+  [762]=>
+  string(20) "set_send_buffer_size"
+  [763]=>
+  string(11) "set_session"
+  [764]=>
+  string(16) "set_session_lock"
+  [765]=>
+  string(25) "set_session_on_completion"
+  [766]=>
+  string(19) "set_split_file_size"
+  [767]=>
+  string(16) "set_split_suffix"
+  [768]=>
+  string(21) "set_timeout_safe_sync"
+  [769]=>
+  string(16) "set_timeout_sync"
+  [770]=>
+  string(19) "set_tracker_numwant"
+  [771]=>
+  string(15) "set_upload_rate"
+  [772]=>
+  string(20) "set_use_udp_trackers"
+  [773]=>
+  string(18) "set_xmlrpc_dialect"
+  [774]=>
+  string(21) "set_xmlrpc_size_limit"
+  [775]=>
+  string(10) "start_tied"
+  [776]=>
+  string(11) "stop_untied"
+  [777]=>
+  string(24) "strings.choke_heuristics"
+  [778]=>
+  string(33) "strings.choke_heuristics.download"
+  [779]=>
+  string(31) "strings.choke_heuristics.upload"
+  [780]=>
+  string(23) "strings.connection_type"
+  [781]=>
+  string(18) "strings.encryption"
+  [782]=>
+  string(17) "strings.ip_filter"
+  [783]=>
+  string(14) "strings.ip_tos"
+  [784]=>
+  string(20) "strings.tracker_mode"
+  [785]=>
+  string(18) "system.api_version"
+  [786]=>
+  string(21) "system.client_version"
+  [787]=>
+  string(10) "system.cwd"
+  [788]=>
+  string(14) "system.cwd.set"
+  [789]=>
+  string(20) "system.file.allocate"
+  [790]=>
+  string(24) "system.file.allocate.set"
+  [791]=>
+  string(20) "system.file.max_size"
+  [792]=>
+  string(24) "system.file.max_size.set"
+  [793]=>
+  string(22) "system.file.split_size"
+  [794]=>
+  string(26) "system.file.split_size.set"
+  [795]=>
+  string(24) "system.file.split_suffix"
+  [796]=>
+  string(28) "system.file.split_suffix.set"
+  [797]=>
+  string(20) "system.file_allocate"
+  [798]=>
+  string(24) "system.file_allocate.set"
+  [799]=>
+  string(30) "system.file_status_cache.prune"
+  [800]=>
+  string(29) "system.file_status_cache.size"
+  [801]=>
+  string(27) "system.files.closed_counter"
+  [802]=>
+  string(27) "system.files.failed_counter"
+  [803]=>
+  string(27) "system.files.opened_counter"
+  [804]=>
+  string(15) "system.hostname"
+  [805]=>
+  string(22) "system.library_version"
+  [806]=>
+  string(19) "system.method.erase"
+  [807]=>
+  string(17) "system.method.get"
+  [808]=>
+  string(21) "system.method.has_key"
+  [809]=>
+  string(20) "system.method.insert"
+  [810]=>
+  string(23) "system.method.list_keys"
+  [811]=>
+  string(17) "system.method.set"
+  [812]=>
+  string(21) "system.method.set_key"
+  [813]=>
+  string(10) "system.pid"
+  [814]=>
+  string(11) "system.time"
+  [815]=>
+  string(19) "system.time_seconds"
+  [816]=>
+  string(16) "system.time_usec"
+  [817]=>
+  string(16) "system.umask.set"
+  [818]=>
+  string(20) "t.activity_time_last"
+  [819]=>
+  string(20) "t.activity_time_next"
+  [820]=>
+  string(12) "t.can_scrape"
+  [821]=>
+  string(9) "t.disable"
+  [822]=>
+  string(8) "t.enable"
+  [823]=>
+  string(16) "t.failed_counter"
+  [824]=>
+  string(18) "t.failed_time_last"
+  [825]=>
+  string(18) "t.failed_time_next"
+  [826]=>
+  string(11) "t.get_group"
+  [827]=>
+  string(8) "t.get_id"
+  [828]=>
+  string(18) "t.get_min_interval"
+  [829]=>
+  string(21) "t.get_normal_interval"
+  [830]=>
+  string(21) "t.get_scrape_complete"
+  [831]=>
+  string(23) "t.get_scrape_downloaded"
+  [832]=>
+  string(23) "t.get_scrape_incomplete"
+  [833]=>
+  string(22) "t.get_scrape_time_last"
+  [834]=>
+  string(10) "t.get_type"
+  [835]=>
+  string(9) "t.get_url"
+  [836]=>
+  string(7) "t.group"
+  [837]=>
+  string(4) "t.id"
+  [838]=>
+  string(9) "t.is_busy"
+  [839]=>
+  string(12) "t.is_enabled"
+  [840]=>
+  string(16) "t.is_enabled.set"
+  [841]=>
+  string(18) "t.is_extra_tracker"
+  [842]=>
+  string(9) "t.is_open"
+  [843]=>
+  string(11) "t.is_usable"
+  [844]=>
+  string(14) "t.latest_event"
+  [845]=>
+  string(18) "t.latest_new_peers"
+  [846]=>
+  string(18) "t.latest_sum_peers"
+  [847]=>
+  string(14) "t.min_interval"
+  [848]=>
+  string(11) "t.multicall"
+  [849]=>
+  string(17) "t.normal_interval"
+  [850]=>
+  string(17) "t.scrape_complete"
+  [851]=>
+  string(16) "t.scrape_counter"
+  [852]=>
+  string(19) "t.scrape_downloaded"
+  [853]=>
+  string(19) "t.scrape_incomplete"
+  [854]=>
+  string(18) "t.scrape_time_last"
+  [855]=>
+  string(13) "t.set_enabled"
+  [856]=>
+  string(17) "t.success_counter"
+  [857]=>
+  string(19) "t.success_time_last"
+  [858]=>
+  string(19) "t.success_time_next"
+  [859]=>
+  string(6) "t.type"
+  [860]=>
+  string(5) "t.url"
+  [861]=>
+  string(13) "throttle.down"
+  [862]=>
+  string(17) "throttle.down.max"
+  [863]=>
+  string(18) "throttle.down.rate"
+  [864]=>
+  string(29) "throttle.global_down.max_rate"
+  [865]=>
+  string(33) "throttle.global_down.max_rate.set"
+  [866]=>
+  string(36) "throttle.global_down.max_rate.set_kb"
+  [867]=>
+  string(25) "throttle.global_down.rate"
+  [868]=>
+  string(26) "throttle.global_down.total"
+  [869]=>
+  string(27) "throttle.global_up.max_rate"
+  [870]=>
+  string(31) "throttle.global_up.max_rate.set"
+  [871]=>
+  string(34) "throttle.global_up.max_rate.set_kb"
+  [872]=>
+  string(23) "throttle.global_up.rate"
+  [873]=>
+  string(24) "throttle.global_up.total"
+  [874]=>
+  string(11) "throttle.ip"
+  [875]=>
+  string(22) "throttle.max_downloads"
+  [876]=>
+  string(26) "throttle.max_downloads.div"
+  [877]=>
+  string(31) "throttle.max_downloads.div._val"
+  [878]=>
+  string(35) "throttle.max_downloads.div._val.set"
+  [879]=>
+  string(30) "throttle.max_downloads.div.set"
+  [880]=>
+  string(29) "throttle.max_downloads.global"
+  [881]=>
+  string(34) "throttle.max_downloads.global._val"
+  [882]=>
+  string(38) "throttle.max_downloads.global._val.set"
+  [883]=>
+  string(33) "throttle.max_downloads.global.set"
+  [884]=>
+  string(26) "throttle.max_downloads.set"
+  [885]=>
+  string(25) "throttle.max_peers.normal"
+  [886]=>
+  string(29) "throttle.max_peers.normal.set"
+  [887]=>
+  string(23) "throttle.max_peers.seed"
+  [888]=>
+  string(27) "throttle.max_peers.seed.set"
+  [889]=>
+  string(20) "throttle.max_uploads"
+  [890]=>
+  string(24) "throttle.max_uploads.div"
+  [891]=>
+  string(29) "throttle.max_uploads.div._val"
+  [892]=>
+  string(33) "throttle.max_uploads.div._val.set"
+  [893]=>
+  string(28) "throttle.max_uploads.div.set"
+  [894]=>
+  string(27) "throttle.max_uploads.global"
+  [895]=>
+  string(32) "throttle.max_uploads.global._val"
+  [896]=>
+  string(36) "throttle.max_uploads.global._val.set"
+  [897]=>
+  string(31) "throttle.max_uploads.global.set"
+  [898]=>
+  string(24) "throttle.max_uploads.set"
+  [899]=>
+  string(22) "throttle.min_downloads"
+  [900]=>
+  string(26) "throttle.min_downloads.set"
+  [901]=>
+  string(25) "throttle.min_peers.normal"
+  [902]=>
+  string(29) "throttle.min_peers.normal.set"
+  [903]=>
+  string(23) "throttle.min_peers.seed"
+  [904]=>
+  string(27) "throttle.min_peers.seed.set"
+  [905]=>
+  string(20) "throttle.min_uploads"
+  [906]=>
+  string(24) "throttle.min_uploads.set"
+  [907]=>
+  string(27) "throttle.unchoked_downloads"
+  [908]=>
+  string(25) "throttle.unchoked_uploads"
+  [909]=>
+  string(11) "throttle.up"
+  [910]=>
+  string(15) "throttle.up.max"
+  [911]=>
+  string(16) "throttle.up.rate"
+  [912]=>
+  string(13) "throttle_down"
+  [913]=>
+  string(11) "throttle_ip"
+  [914]=>
+  string(11) "throttle_up"
+  [915]=>
+  string(7) "to_date"
+  [916]=>
+  string(15) "to_elapsed_time"
+  [917]=>
+  string(10) "to_gm_date"
+  [918]=>
+  string(10) "to_gm_time"
+  [919]=>
+  string(5) "to_kb"
+  [920]=>
+  string(5) "to_mb"
+  [921]=>
+  string(11) "to_throttle"
+  [922]=>
+  string(7) "to_time"
+  [923]=>
+  string(5) "to_xb"
+  [924]=>
+  string(15) "tracker_numwant"
+  [925]=>
+  string(16) "trackers.disable"
+  [926]=>
+  string(15) "trackers.enable"
+  [927]=>
+  string(16) "trackers.numwant"
+  [928]=>
+  string(20) "trackers.numwant.set"
+  [929]=>
+  string(16) "trackers.use_udp"
+  [930]=>
+  string(20) "trackers.use_udp.set"
+  [931]=>
+  string(10) "try_import"
+  [932]=>
+  string(19) "ui.current_view.set"
+  [933]=>
+  string(19) "ui.unfocus_download"
+  [934]=>
+  string(11) "upload_rate"
+  [935]=>
+  string(16) "use_udp_trackers"
+  [936]=>
+  string(8) "view.add"
+  [937]=>
+  string(16) "view.event_added"
+  [938]=>
+  string(18) "view.event_removed"
+  [939]=>
+  string(11) "view.filter"
+  [940]=>
+  string(15) "view.filter_all"
+  [941]=>
+  string(20) "view.filter_download"
+  [942]=>
+  string(14) "view.filter_on"
+  [943]=>
+  string(9) "view.list"
+  [944]=>
+  string(15) "view.persistent"
+  [945]=>
+  string(8) "view.set"
+  [946]=>
+  string(20) "view.set_not_visible"
+  [947]=>
+  string(16) "view.set_visible"
+  [948]=>
+  string(9) "view.size"
+  [949]=>
+  string(21) "view.size_not_visible"
+  [950]=>
+  string(9) "view.sort"
+  [951]=>
+  string(17) "view.sort_current"
+  [952]=>
+  string(13) "view.sort_new"
+  [953]=>
+  string(8) "view_add"
+  [954]=>
+  string(11) "view_filter"
+  [955]=>
+  string(14) "view_filter_on"
+  [956]=>
+  string(9) "view_list"
+  [957]=>
+  string(8) "view_set"
+  [958]=>
+  string(9) "view_sort"
+  [959]=>
+  string(17) "view_sort_current"
+  [960]=>
+  string(13) "view_sort_new"
+  [961]=>
+  string(14) "xmlrpc_dialect"
+  [962]=>
+  string(17) "xmlrpc_size_limit"
+  [963]=>
+  string(24) "group.rat_0.ratio.enable"
+  [964]=>
+  string(25) "group.rat_0.ratio.disable"
+  [965]=>
+  string(25) "group.rat_0.ratio.command"
+  [966]=>
+  string(17) "group2.rat_0.view"
+  [967]=>
+  string(21) "group2.rat_0.view.set"
+  [968]=>
+  string(22) "group2.rat_0.ratio.min"
+  [969]=>
+  string(26) "group2.rat_0.ratio.min.set"
+  [970]=>
+  string(22) "group2.rat_0.ratio.max"
+  [971]=>
+  string(26) "group2.rat_0.ratio.max.set"
+  [972]=>
+  string(25) "group2.rat_0.ratio.upload"
+  [973]=>
+  string(29) "group2.rat_0.ratio.upload.set"
+  [974]=>
+  string(16) "group.rat_0.view"
+  [975]=>
+  string(20) "group.rat_0.view.set"
+  [976]=>
+  string(21) "group.rat_0.ratio.min"
+  [977]=>
+  string(25) "group.rat_0.ratio.min.set"
+  [978]=>
+  string(21) "group.rat_0.ratio.max"
+  [979]=>
+  string(25) "group.rat_0.ratio.max.set"
+  [980]=>
+  string(24) "group.rat_0.ratio.upload"
+  [981]=>
+  string(28) "group.rat_0.ratio.upload.set"
+  [982]=>
+  string(24) "group.rat_1.ratio.enable"
+  [983]=>
+  string(25) "group.rat_1.ratio.disable"
+  [984]=>
+  string(25) "group.rat_1.ratio.command"
+  [985]=>
+  string(17) "group2.rat_1.view"
+  [986]=>
+  string(21) "group2.rat_1.view.set"
+  [987]=>
+  string(22) "group2.rat_1.ratio.min"
+  [988]=>
+  string(26) "group2.rat_1.ratio.min.set"
+  [989]=>
+  string(22) "group2.rat_1.ratio.max"
+  [990]=>
+  string(26) "group2.rat_1.ratio.max.set"
+  [991]=>
+  string(25) "group2.rat_1.ratio.upload"
+  [992]=>
+  string(29) "group2.rat_1.ratio.upload.set"
+  [993]=>
+  string(16) "group.rat_1.view"
+  [994]=>
+  string(20) "group.rat_1.view.set"
+  [995]=>
+  string(21) "group.rat_1.ratio.min"
+  [996]=>
+  string(25) "group.rat_1.ratio.min.set"
+  [997]=>
+  string(21) "group.rat_1.ratio.max"
+  [998]=>
+  string(25) "group.rat_1.ratio.max.set"
+  [999]=>
+  string(24) "group.rat_1.ratio.upload"
+  [1000]=>
+  string(28) "group.rat_1.ratio.upload.set"
+  [1001]=>
+  string(24) "group.rat_2.ratio.enable"
+  [1002]=>
+  string(25) "group.rat_2.ratio.disable"
+  [1003]=>
+  string(25) "group.rat_2.ratio.command"
+  [1004]=>
+  string(17) "group2.rat_2.view"
+  [1005]=>
+  string(21) "group2.rat_2.view.set"
+  [1006]=>
+  string(22) "group2.rat_2.ratio.min"
+  [1007]=>
+  string(26) "group2.rat_2.ratio.min.set"
+  [1008]=>
+  string(22) "group2.rat_2.ratio.max"
+  [1009]=>
+  string(26) "group2.rat_2.ratio.max.set"
+  [1010]=>
+  string(25) "group2.rat_2.ratio.upload"
+  [1011]=>
+  string(29) "group2.rat_2.ratio.upload.set"
+  [1012]=>
+  string(16) "group.rat_2.view"
+  [1013]=>
+  string(20) "group.rat_2.view.set"
+  [1014]=>
+  string(21) "group.rat_2.ratio.min"
+  [1015]=>
+  string(25) "group.rat_2.ratio.min.set"
+  [1016]=>
+  string(21) "group.rat_2.ratio.max"
+  [1017]=>
+  string(25) "group.rat_2.ratio.max.set"
+  [1018]=>
+  string(24) "group.rat_2.ratio.upload"
+  [1019]=>
+  string(28) "group.rat_2.ratio.upload.set"
+  [1020]=>
+  string(24) "group.rat_3.ratio.enable"
+  [1021]=>
+  string(25) "group.rat_3.ratio.disable"
+  [1022]=>
+  string(25) "group.rat_3.ratio.command"
+  [1023]=>
+  string(17) "group2.rat_3.view"
+  [1024]=>
+  string(21) "group2.rat_3.view.set"
+  [1025]=>
+  string(22) "group2.rat_3.ratio.min"
+  [1026]=>
+  string(26) "group2.rat_3.ratio.min.set"
+  [1027]=>
+  string(22) "group2.rat_3.ratio.max"
+  [1028]=>
+  string(26) "group2.rat_3.ratio.max.set"
+  [1029]=>
+  string(25) "group2.rat_3.ratio.upload"
+  [1030]=>
+  string(29) "group2.rat_3.ratio.upload.set"
+  [1031]=>
+  string(16) "group.rat_3.view"
+  [1032]=>
+  string(20) "group.rat_3.view.set"
+  [1033]=>
+  string(21) "group.rat_3.ratio.min"
+  [1034]=>
+  string(25) "group.rat_3.ratio.min.set"
+  [1035]=>
+  string(21) "group.rat_3.ratio.max"
+  [1036]=>
+  string(25) "group.rat_3.ratio.max.set"
+  [1037]=>
+  string(24) "group.rat_3.ratio.upload"
+  [1038]=>
+  string(28) "group.rat_3.ratio.upload.set"
+  [1039]=>
+  string(24) "group.rat_4.ratio.enable"
+  [1040]=>
+  string(25) "group.rat_4.ratio.disable"
+  [1041]=>
+  string(25) "group.rat_4.ratio.command"
+  [1042]=>
+  string(17) "group2.rat_4.view"
+  [1043]=>
+  string(21) "group2.rat_4.view.set"
+  [1044]=>
+  string(22) "group2.rat_4.ratio.min"
+  [1045]=>
+  string(26) "group2.rat_4.ratio.min.set"
+  [1046]=>
+  string(22) "group2.rat_4.ratio.max"
+  [1047]=>
+  string(26) "group2.rat_4.ratio.max.set"
+  [1048]=>
+  string(25) "group2.rat_4.ratio.upload"
+  [1049]=>
+  string(29) "group2.rat_4.ratio.upload.set"
+  [1050]=>
+  string(16) "group.rat_4.view"
+  [1051]=>
+  string(20) "group.rat_4.view.set"
+  [1052]=>
+  string(21) "group.rat_4.ratio.min"
+  [1053]=>
+  string(25) "group.rat_4.ratio.min.set"
+  [1054]=>
+  string(21) "group.rat_4.ratio.max"
+  [1055]=>
+  string(25) "group.rat_4.ratio.max.set"
+  [1056]=>
+  string(24) "group.rat_4.ratio.upload"
+  [1057]=>
+  string(28) "group.rat_4.ratio.upload.set"
+  [1058]=>
+  string(24) "group.rat_5.ratio.enable"
+  [1059]=>
+  string(25) "group.rat_5.ratio.disable"
+  [1060]=>
+  string(25) "group.rat_5.ratio.command"
+  [1061]=>
+  string(17) "group2.rat_5.view"
+  [1062]=>
+  string(21) "group2.rat_5.view.set"
+  [1063]=>
+  string(22) "group2.rat_5.ratio.min"
+  [1064]=>
+  string(26) "group2.rat_5.ratio.min.set"
+  [1065]=>
+  string(22) "group2.rat_5.ratio.max"
+  [1066]=>
+  string(26) "group2.rat_5.ratio.max.set"
+  [1067]=>
+  string(25) "group2.rat_5.ratio.upload"
+  [1068]=>
+  string(29) "group2.rat_5.ratio.upload.set"
+  [1069]=>
+  string(16) "group.rat_5.view"
+  [1070]=>
+  string(20) "group.rat_5.view.set"
+  [1071]=>
+  string(21) "group.rat_5.ratio.min"
+  [1072]=>
+  string(25) "group.rat_5.ratio.min.set"
+  [1073]=>
+  string(21) "group.rat_5.ratio.max"
+  [1074]=>
+  string(25) "group.rat_5.ratio.max.set"
+  [1075]=>
+  string(24) "group.rat_5.ratio.upload"
+  [1076]=>
+  string(28) "group.rat_5.ratio.upload.set"
+  [1077]=>
+  string(24) "group.rat_6.ratio.enable"
+  [1078]=>
+  string(25) "group.rat_6.ratio.disable"
+  [1079]=>
+  string(25) "group.rat_6.ratio.command"
+  [1080]=>
+  string(17) "group2.rat_6.view"
+  [1081]=>
+  string(21) "group2.rat_6.view.set"
+  [1082]=>
+  string(22) "group2.rat_6.ratio.min"
+  [1083]=>
+  string(26) "group2.rat_6.ratio.min.set"
+  [1084]=>
+  string(22) "group2.rat_6.ratio.max"
+  [1085]=>
+  string(26) "group2.rat_6.ratio.max.set"
+  [1086]=>
+  string(25) "group2.rat_6.ratio.upload"
+  [1087]=>
+  string(29) "group2.rat_6.ratio.upload.set"
+  [1088]=>
+  string(16) "group.rat_6.view"
+  [1089]=>
+  string(20) "group.rat_6.view.set"
+  [1090]=>
+  string(21) "group.rat_6.ratio.min"
+  [1091]=>
+  string(25) "group.rat_6.ratio.min.set"
+  [1092]=>
+  string(21) "group.rat_6.ratio.max"
+  [1093]=>
+  string(25) "group.rat_6.ratio.max.set"
+  [1094]=>
+  string(24) "group.rat_6.ratio.upload"
+  [1095]=>
+  string(28) "group.rat_6.ratio.upload.set"
+  [1096]=>
+  string(24) "group.rat_7.ratio.enable"
+  [1097]=>
+  string(25) "group.rat_7.ratio.disable"
+  [1098]=>
+  string(25) "group.rat_7.ratio.command"
+  [1099]=>
+  string(17) "group2.rat_7.view"
+  [1100]=>
+  string(21) "group2.rat_7.view.set"
+  [1101]=>
+  string(22) "group2.rat_7.ratio.min"
+  [1102]=>
+  string(26) "group2.rat_7.ratio.min.set"
+  [1103]=>
+  string(22) "group2.rat_7.ratio.max"
+  [1104]=>
+  string(26) "group2.rat_7.ratio.max.set"
+  [1105]=>
+  string(25) "group2.rat_7.ratio.upload"
+  [1106]=>
+  string(29) "group2.rat_7.ratio.upload.set"
+  [1107]=>
+  string(16) "group.rat_7.view"
+  [1108]=>
+  string(20) "group.rat_7.view.set"
+  [1109]=>
+  string(21) "group.rat_7.ratio.min"
+  [1110]=>
+  string(25) "group.rat_7.ratio.min.set"
+  [1111]=>
+  string(21) "group.rat_7.ratio.max"
+  [1112]=>
+  string(25) "group.rat_7.ratio.max.set"
+  [1113]=>
+  string(24) "group.rat_7.ratio.upload"
+  [1114]=>
+  string(28) "group.rat_7.ratio.upload.set"
+}
