@@ -19,7 +19,7 @@ if (isset($_GET['do'])) {
 		case 'getStatus':
 				
 			// Getting info from torrent
-			$info = array_merge($info, GetSeedBoxInfo($seedbox_host, $seedbox_port, $seedbox_user, $seedbox_passwd, $ftp_done_path));
+			$info = array_merge($info, GetSeedBoxInfo($seedbox_type, $seedbox_host, $seedbox_port, $seedbox_user, $seedbox_passwd, $ftp_done_path));
 				
 			// Getting free space on disk
 			foreach ($disks as $name => $path) {
@@ -34,13 +34,14 @@ if (isset($_GET['do'])) {
 		case 'getSeedQueue':
 				
 			// Getting info from torrent
-			$info = array_merge($info, GetSeedBoxSeeds($seedbox_host, $seedbox_port, $seedbox_user, $seedbox_passwd, $ftp_done_path));
+			$info = array_merge($info, GetSeedBoxSeeds($seedbox_type, $seedbox_host, $seedbox_port, $seedbox_user, $seedbox_passwd, $seedbox_home_dir, $ftp_done_path));
 			break;
 
 		case 'getLog':
 			// Reading log file
 			$lines = read_file($log_file, 20);
 			$info['log_entries'] = $lines;
+			//var_dump($info);
 			break;
 
 		case 'getDoneFiles':
@@ -50,14 +51,60 @@ if (isset($_GET['do'])) {
 			break;
 			
 		case 'getMovies':
+		  // get the sort
+		  if (isset($_GET['do']) && ($_GET['movies_sort'] == "false")) {
+		    $sort = true;
+      } else {
+		    $sort = false;
+      }
 			// Reading file that have been retrieve throught ftp
-			$lines = read_dir($target_path_movies, 1, $_SERVER['PHP_AUTH_USER'], true);
+			$lines = read_dir($target_path_movies_old, 1, $_SERVER['PHP_AUTH_USER'], true);
+
+			// Reading file that have been retrieve throught ftp
+			if (isset($target_ftp_server)) {
+        // On se connecte au ftp
+        $conn_id = connectFTP($target_ftp_server, $target_ftp_user, $target_ftp_password);
+        if (!$conn_id) {
+        	exit;
+        }
+        $systyp = systypeFtp($conn_id);
+        
+        $lst = scanftpdir($target_path_movies, $conn_id, $systyp, true);
+			  $lines = array_merge($lines, read_dir_ftp($lst, $target_path_movies, $_SERVER['PHP_AUTH_USER'], true));
+			  
+			  if ($sort) {
+			    usort($lines, function($a, $b) {
+            return $a["date"] < $b["date"];
+          });
+        }
+        
+        @ftp_close($conn_id);
+
+      }
+
 			$info['files'] = $lines;
 			break;
 			
 		case 'getTvShows':
+ 			$lines = read_dir($target_path_tvshows_old, 1, $_SERVER['PHP_AUTH_USER'], true);
+
+
 			// Reading file that have been retrieve throught ftp
-			$lines = read_dir($target_path_tvshows, 1, $_SERVER['PHP_AUTH_USER'], true);
+			if (isset($target_ftp_server)) {
+        // On se connecte au ftp
+        $conn_id = connectFTP($target_ftp_server, $target_ftp_user, $target_ftp_password);
+        if (!$conn_id) {
+        	exit;
+        }
+        $systyp = systypeFtp($conn_id);
+        
+        $lst = scanftpdir($target_path_tvshows, $conn_id, $systyp, true);
+        $lines = array_merge($lines, read_dir_ftp($lst, $target_path_tvshows, $_SERVER['PHP_AUTH_USER'], true));
+        
+        @ftp_close($conn_id);
+
+      }
+			
 			$info['files'] = $lines;
 			break;
 			

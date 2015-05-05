@@ -20,6 +20,14 @@ nb-configuration.xml
 
 # Mac
 .DS_Store
+._.DS_Store
 
 # misc
+*.lock
 *.sav
+movie.db
+polls.db
+Thumbs.db
+mySettings.php
+SeedMeHome/done
+wallpaper.png
