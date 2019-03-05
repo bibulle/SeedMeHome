@@ -1,4 +1,4 @@
-<?php
+<?php zoids.gif
 require_once "settings.php";
 require_once "functions.php";
 require_once "headers.php";
