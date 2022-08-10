@@ -39,17 +39,12 @@ jobs:
       #    username: ${{ github.actor }}
       #    password: ${{ secrets.GHCR_PAT }}
       
-      - name: Build image and push to Docker Hub and GitHub Container Registry
-        uses: docker/build-push-action@v2
+      - name: Build and push
+        uses: docker/build-push-action@v3
         with:
-          # relative path to the place where source code with Dockerfile is located
           context: ./src/samples/simple
-          # Note: tags has to be all lower-case
-          tags: |
-            oskardudycz/eventsourcing.nodejs.simple:latest 
-            ghcr.io/oskardudycz/eventsourcing.nodejs/simple:latest
-          # build on feature branches, push only on main branch
-          push: ${{ github.ref == 'refs/heads/main' }}
-
+          push: true
+          tags: bibulle/app:latest
+          
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
